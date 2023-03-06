@@ -1,0 +1,72 @@
+.header-bg{
+  background-color: var(--cor-12);
+}
+
+.header{
+  display: flex;/* colocar um item ao lado do outro */
+  flex-wrap: wrap; /* Permite que os itens quebre ao diminuir a tela */
+  gap: 20px;
+  justify-content: space-between; /* um espaço grande entre eles, itens nas extremidades da tela */
+  align-items: center; /* alinhar os itens ao centro */
+  box-sizing: border-box; /* contar com os valores de padding */
+  padding: 20px;
+  max-width: 1200px;/* colocar header em um container */
+  margin-left: auto;/* centralizar conforme aumenta de tela */
+  margin-right: auto;/* centralizar conforme aumenta de tela */
+}
+
+.header-menu{
+  display: flex; /* colocar um item ao lado do outro */
+  flex-wrap: wrap; /* Permite que os itens quebre ao diminuir a tela */
+  gap: 40px;
+}
+
+.header-menu a{
+  display: inline-block; /* Quando um item cair um abaixo do outro o pading n pegará direito
+  pq o elemente é inline, colocamos inline block para ñ ficar um item em cima do outro nessa situação. */
+  padding: 16px 0px; /* Aumentar a área de contato */
+  position: relative;
+}
+
+.header-menu a::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-0);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after{
+  width: 100%;
+}
+
+
+@media (max-width: 800px){
+  .header-menu{
+    gap: 20px;
+  }
+  .header-menu a {
+    background: #111111;
+    padding: 12px 16px; 
+    border-radius: 4px;
+  }
+  .header-menu a:hover{
+    background-color: #2e2e2e;
+  }
+  .header a:after{
+    display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .header-menu{
+    gap: 12px;
+  }
+  .header-menu a{
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
