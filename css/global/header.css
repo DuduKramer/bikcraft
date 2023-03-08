@@ -6,13 +6,11 @@
   display: flex;/* colocar um item ao lado do outro */
   flex-wrap: wrap; /* Permite que os itens quebre ao diminuir a tela */
   gap: 20px;
+  padding-top: 20px;
   justify-content: space-between; /* um espaço grande entre eles, itens nas extremidades da tela */
   align-items: center; /* alinhar os itens ao centro */
-  box-sizing: border-box; /* contar com os valores de padding */
-  padding: 20px;
-  max-width: 1200px;/* colocar header em um container */
-  margin-left: auto;/* centralizar conforme aumenta de tela */
-  margin-right: auto;/* centralizar conforme aumenta de tela */
+  padding-top: 20px;
+  padding-bottom: 20px; 
 }
 
 .header-menu{
