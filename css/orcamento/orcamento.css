@@ -6,8 +6,8 @@
   display: grid;
   grid-template-columns: 5fr 7fr;
   padding-bottom: 120px;
-  padding-top: 120px;
-  margin: 20px;
+ /*  padding-top: 120px;
+  margin: 20px; */
 } 
 
 .orcamento h2{
@@ -93,15 +93,15 @@
 
 .orcamento-produto input:focus + label{
   box-shadow: 0 0 0 2px var(--cor-p1);
-  border: 1px solid var(--cor-12);
+  border: var(--cor-12);
 }
 
 
-.orcamento-produto label:focus{
+/* .orcamento-produto label:focus{
   background-color: var(--cor-9);
   box-shadow: 0 0 0 2px var(--cor-p1);
 }
-
+ */
 
 .orcamento-produto label span{
   display: none;
@@ -142,13 +142,9 @@
 
 
 #bikcraft:checked ~ #orcamento-bikcraft,
-#seguro:checked ~ #orcamento-bikcraft{
+#seguro:checked ~ #orcamento-seguro {
   display: grid;
   gap: 20px;
-}
-
-#orcamento-bikcraft{
-  display: block;
 }
 
 .orcamento-detalhes{
